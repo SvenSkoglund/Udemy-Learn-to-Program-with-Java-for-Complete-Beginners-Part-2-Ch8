@@ -227,34 +227,7 @@ public static int loadFile(employee[] ees) {
     return count;
 }
 
-	
-	
-//	employee[] loadFile() throws IOException, NullPointerException 
-//	{
-//		employee [] loadMenu = new employee[50];
-//		FileInputStream loadFile = new FileInputStream("EmployeeMenu.dat");
-//		DataInputStream dataFile = new DataInputStream(loadFile);
-//		
-//		for ( int i = 0 ; i < 50 ; i++)
-//		{
-//		if (dataFile != null)
-//		{
-//			String firstName = dataFile.readUTF();
-//			String lastName = dataFile.readUTF();
-//			String phoneNumber = dataFile.readUTF();
-//			int deptCode = dataFile.readInt();
-//			int salary = dataFile.readInt();
-//			
-//			loadMenu[i].firstName = firstName;
-//			loadMenu[i].lastName = lastName;
-//			loadMenu[i].phoneNumber = phoneNumber;
-//			loadMenu[i].deptCode = deptCode;
-//			loadMenu[i].salary = salary;
-//			}
-//		}
-//		loadFile.close();
-//		return loadMenu;
-//	}
+
 	public static void saveFile(employee [] employeeFile) throws IOException , NullPointerException
 	{
 		try
@@ -263,7 +236,6 @@ public static int loadFile(employee[] ees) {
 			DataOutputStream dataSave = new DataOutputStream(outputFile);
 		
 		
-	//	employee saveFile = employeeFile [ i ] ;
 		for ( int i = 0 ; i < 50 ; i++)
 		{
 			employee saveFile = employeeFile [ i ] ;
